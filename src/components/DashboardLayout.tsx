@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
-import { AIAssistantFab } from "@/components/AIAssistantFab";
+import { AIAssistant } from "@/components/ia/AIAssistant";
 import {
   Home,
   TrendingUp,
@@ -45,6 +45,7 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
     { icon: Target, label: "Metas", path: "/metas" },
     { icon: ShoppingCart, label: "Mercado", path: "/mercado" },
     { icon: Car, label: "Veículos", path: "/veiculos" },
+    { icon: Bot, label: "IA Financeira", path: "/ia" },
     { icon: Users, label: "Perfil", path: "/perfil" },
   ];
 
@@ -241,7 +242,7 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       </main>
 
       {/* Floating AI Assistant - Always present */}
-      <AIAssistantFab />
+      <AIAssistant />
     </div>
   );
 };

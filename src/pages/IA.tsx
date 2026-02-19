@@ -14,6 +14,7 @@ import { useIAConfiguracoes } from "@/hooks/useIAConfiguracoes";
 import { useIAAnalysis, type AnalysisResult } from "@/hooks/useIAAnalysis";
 import { useCategorias } from "@/hooks/useCategorias";
 import { supabase } from "@/integrations/supabase/client";
+import { AIConfigPanel } from "@/components/ia/AIConfigPanel";
 
 interface UploadedFile {
   id: string;
@@ -439,6 +440,8 @@ Responda APENAS com o JSON, sem explicações adicionais.`;
                 )}
               </div>
             </Card>
+
+            <AIConfigPanel />
           </TabsContent>
 
           <TabsContent value="upload" className="space-y-6">
@@ -461,8 +464,8 @@ Responda APENAS com o JSON, sem explicações adicionais.`;
 
               <div
                 className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors ${dragOver
-                    ? 'border-wa-green bg-wa-green-light/10'
-                    : 'border-gray-300 hover:border-gray-400'
+                  ? 'border-wa-green bg-wa-green-light/10'
+                  : 'border-gray-300 hover:border-gray-400'
                   }`}
                 onDragOver={handleDragOver}
                 onDragLeave={handleDragLeave}
@@ -543,8 +546,8 @@ Responda APENAS com o JSON, sem explicações adicionais.`;
                           <FileText className="w-5 h-5 text-gray-500" />
                           <span className="font-medium text-gray-900">{result.file_name}</span>
                           <span className={`px-2 py-1 rounded-full text-xs font-medium ${result.tipo === 'receita'
-                              ? 'bg-green-100 text-green-800'
-                              : 'bg-red-100 text-red-800'
+                            ? 'bg-green-100 text-green-800'
+                            : 'bg-red-100 text-red-800'
                             }`}>
                             {result.tipo}
                           </span>
@@ -676,8 +679,8 @@ Responda APENAS com o JSON, sem explicações adicionais.`;
                         <FileText className="w-4 h-4 text-gray-500" />
                         <span className="text-sm font-medium">{result.file_name}</span>
                         <span className={`px-2 py-1 rounded-full text-xs font-medium ${result.status === 'approved' ? 'bg-green-100 text-green-800' :
-                            result.status === 'rejected' ? 'bg-red-100 text-red-800' :
-                              'bg-yellow-100 text-yellow-800'
+                          result.status === 'rejected' ? 'bg-red-100 text-red-800' :
+                            'bg-yellow-100 text-yellow-800'
                           }`}>
                           {result.status === 'approved' ? 'Aprovado' :
                             result.status === 'rejected' ? 'Rejeitado' : 'Pendente'}
