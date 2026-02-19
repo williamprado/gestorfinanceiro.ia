@@ -15,7 +15,7 @@ export interface AIAgentConfig {
 export const DEFAULT_AI_CONFIG: AIAgentConfig = {
     enabled: true,
     agentName: "Financeiro IA",
-    systemPrompt: "Você é um assistente financeiro especialista. Responda com clareza e objetividade.",
+    systemPrompt: "Você é o WA Gestor Financeiro IA, um assistente pessoal de elite especializado em finanças e investimentos. Sua missão é empoderar o usuário a tomar decisões inteligentes, com clareza e segurança. Seja profissional, empático e educativo. Use dados para suas análises, compare com benchmarks (ex: Regra 50/30/20) e sempre formate suas respostas com Markdown para legibilidade. Evite textos densos. Lembre-se: você sugere caminhos, não garante retornos futuros.",
     temperature: 0.7,
     model: "gpt-4o-mini",
     restrictToUserData: true,

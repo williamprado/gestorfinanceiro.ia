@@ -1,4 +1,6 @@
-# 🏦 Mordomo - Controle Financeiro Inteligente
+# 🏦 WA Gestor
+
+Financeiro IA - Controle Financeiro Inteligente
 
 > **Gerencie suas finanças de forma simples e inteligente com dashboard intuitivo, relatórios detalhados e assistente integrado.**
 
@@ -9,7 +11,7 @@
 
 ## 📖 Sobre o Projeto
 
-O **Mordomo** é uma aplicação web moderna para controle financeiro pessoal e empresarial, desenvolvida com foco na simplicidade e eficiência. Com interface intuitiva e recursos avançados, oferece uma solução completa para gestão de finanças.
+O **WA Gestor Financeiro IA* é uma aplicação web moderna para controle financeiro pessoal e empresarial, desenvolvida com foco na simplicidade e eficiência. Com interface intuitiva e recursos avançados, oferece uma solução completa para gestão de finanças.
 
 ### 🎯 Objetivos
 
@@ -67,7 +69,8 @@ O **Mordomo** é uma aplicação web moderna para controle financeiro pessoal e 
 ## 📁 Estrutura do Projeto
 
 ```
-as-mordomo/
+as-WA Gestor
+Financeiro IA/
 ├── public/                 # Arquivos estáticos
 │   ├── favicon.ico
 │   └── lovable-uploads/   # Assets do projeto
@@ -102,11 +105,13 @@ as-mordomo/
 1. **Clone o repositório**
 
 ```bash
-git clone [https://github.com/URL-DO-SEU-REPOSITORIO/mordomo.git]
-cd mordomo-main
+git clone [https://github.com/URL-DO-SEU-REPOSITORIO/WA Gestor
+Financeiro IA.git]
+cd WA Gestor
+Financeiro IA-main
 ```
 
-2. **Instale as dependências**
+1. **Instale as dependências**
 
 ```bash
 npm install
@@ -114,7 +119,7 @@ npm install
 yarn install
 ```
 
-3. **Execute em modo de desenvolvimento**
+1. **Execute em modo de desenvolvimento**
 
 ```bash
 npm run dev
@@ -122,7 +127,7 @@ npm run dev
 yarn dev
 ```
 
-4. **Acesse a aplicação**
+1. **Acesse a aplicação**
 
 ```
 http://localhost:8080
@@ -145,7 +150,8 @@ Crie um arquivo `.env.local` na raiz do projeto:
 
 ```env
 # Configurações da aplicação
-VITE_APP_NAME=Mordomo
+VITE_APP_NAME=WA Gestor
+Financeiro IA
 VITE_API_URL=http://localhost:3000/api
 
 # Configurações de terceiros (se aplicável)
@@ -207,7 +213,8 @@ export function MeuComponente({ titulo, valor, onAction }: ComponenteProps) {
 
 **Equipe WA**
 
-- 🌐 Website: 
+- 🌐 Website:
+
 ---
 
 <div align="center">
